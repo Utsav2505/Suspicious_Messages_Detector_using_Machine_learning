@@ -5,6 +5,7 @@ Welcome to the Suspicious Message Detector project! This tool is designed to hel
 ## About the Project
 
 The Suspicious Message Detector is built using advanced natural language processing techniques and machine learning algorithms. It analyzes the content of a given message and assigns a suspicion score based on various factors such as the presence of suspicious keywords, unusual patterns, or inconsistencies in the text.
+
 ![image](https://stemettes.org/zine/wp-content/uploads/sites/3/2021/09/giphy-2-4.gif)
 
 ## Getting Started
