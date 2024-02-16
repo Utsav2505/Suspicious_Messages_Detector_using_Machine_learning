@@ -11,6 +11,10 @@ tfidf_vectorizer = joblib.load(r'model\tfidf_vectorizer.joblib')
 def home():
     return render_template('index.html')
 
+@app.route('/about/')
+def about():
+    return render_template('about.html')
+
 @app.route('/check', methods=['POST'])
 def predict():
     if request.method == 'POST':
