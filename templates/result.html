@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suspicious Messages Detector - Result</title>
-    
-    <link rel="stylesheet" href="{{ url_for('static',filename='CSS/navbar.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static',filename='CSS/style3.css') }}">
-</head>
-<body>
-    <div id="navbar" style="text-align: center;">
-        <a href="index.html" >Home</a>
-        <a href="about.html">Github</a>
-        <a href="about.html">About</a>
-        
-    </div>
-    <div style="margin-top: 5vw;">
-        <h2 class="head" style="font-size: 5vw; color: aliceblue; font-family:Arial, Helvetica, sans-serif">Result</h2>
 
-        <p id="predict">{{ prediction }}</p>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='CSS/navbar.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='CSS/style3.css') }}"
+    />
+  </head>
+  <body>
+    <div id="navbar" style="text-align: center">
+      <a href="/">Home</a>
+      <a href="">Github</a>
+      <a href="/about/">About</a>
+    </div>
+    <div style="margin-top: 5vw">
+      <h2
+        class="head"
+        style="
+          font-size: 5vw;
+          color: aliceblue;
+          font-family: Arial, Helvetica, sans-serif;
+        "
+      >
+        Result
+      </h2>
+
+      <p id="predict">{{ prediction }}</p>
     </div>
     <script>
-        var elem = document.getElementById('predict');
+      var elem = document.getElementById("predict");
 
-        if (elem.textContent.trim().toLowerCase() === 'bad') {
-            elem.style.color = '#f6ae2d';
-        } else {
-            elem.style.color = '#86D35D';
-        }
+      if (elem.textContent.trim().toLowerCase() === "bad") {
+        elem.style.color = "#f6ae2d";
+      } else {
+        elem.style.color = "#86D35D";
+      }
     </script>
-</body>
+  </body>
 </html>
